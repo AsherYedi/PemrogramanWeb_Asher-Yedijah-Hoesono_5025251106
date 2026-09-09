@@ -12,6 +12,7 @@ Pada pertemuan 2, saya diminta untuk membuat website portfolio/CV menggunakan HT
 
 ## Hasil Pekerjaan
 
+- LINK WEBSITE: https://asheryedijah.vercel.app/
 - Membuat halaman CV/portfolio yang berisi biodata, pendidikan, pengalaman organisasi, keahlian, dan pencapaian.
 - Menambahkan foto profil serta styling agar tampilan lebih menarik dan rapi.
 
