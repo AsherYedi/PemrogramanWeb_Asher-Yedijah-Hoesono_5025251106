@@ -1,6 +1,6 @@
 ## Pembuatan Website Sekolah dengan HTML
 
-## Biodata Siswa
+## Biodata Mahasiswa
 
 Nama : Asher Yedijah Hoesono  
 NRP : 5025251106  
