@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <p>PERTEMUAN 6</p>
+      <h1>TUGAS JAVASCRIPT</h1>
+    </header>
+
+    <nav>
+      <button onclick="bukaHalaman('beranda')">Beranda</button>
+      <button onclick="bukaHalaman('tugas1')">Tugas 1</button>
+      <button onclick="bukaHalaman('tugas2')">Tugas 2</button>
+      <button onclick="bukaHalaman('tugas3')">Tugas 3</button>
+      <button onclick="bukaHalaman('tugas4')">Tugas 4</button>
+    </nav>
+
+    <main>
+      <section id="beranda" class="halaman aktif">
+        <h2>Daftar Tugas</h2>
+        <p>Silakan pilih tugas yang ingin dibuka.</p>
+        <div class="daftar-menu">
+          <button onclick="bukaHalaman('tugas1')">
+            <b>1. Form Registrasi Mahasiswa</b>
+            <span>Autocomplete nama mahasiswa</span>
+          </button>
+          <button onclick="bukaHalaman('tugas2')">
+            <b>2. Pencarian Kode Pos</b>
+            <span>Provinsi, kabupaten/kota, dan kecamatan</span>
+          </button>
+          <button onclick="bukaHalaman('tugas3')">
+            <b>3. Validasi Form</b>
+            <span>Validasi data registrasi di sisi klien</span>
+          </button>
+          <button onclick="bukaHalaman('tugas4')">
+            <b>4. Dropdown Dinamis</b>
+            <span>Pilihan fakultas dan program studi</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="tugas1" class="halaman">
+        <h2>Tugas 1 - Form Registrasi Mahasiswa</h2>
+        <p>Ketik nama mahasiswa untuk melihat rekomendasi.</p>
+        <form id="formMahasiswa">
+          <label for="namaMahasiswa">Nama Mahasiswa:</label>
+          <div class="autocomplete">
+            <input id="namaMahasiswa" type="text" autocomplete="off" required />
+            <div id="rekomendasiNama" class="rekomendasi"></div>
+          </div>
+
+          <label for="nim">NIM:</label>
+          <input id="nim" type="text" required />
+
+          <label for="mataKuliah">Mata Kuliah:</label>
+          <select id="mataKuliah" required>
+            <option value="">-- Pilih Mata Kuliah --</option>
+            <option>Pemrograman Web</option>
+            <option>Basis Data</option>
+            <option>Interaksi Manusia Komputer</option>
+          </select>
+
+          <label for="dosen">Dosen:</label>
+          <select id="dosen" required>
+            <option value="">-- Pilih Dosen --</option>
+            <option>Dr. Fajar Baskoro, S.Kom., M.T.</option>
+            <option>Ir. Siti Rochimah, M.T., Ph.D.</option>
+            <option>Dwi Sunaryono, S.Kom., M.Kom.</option>
+          </select>
+
+          <button type="submit">Simpan</button>
+        </form>
+        <p id="hasilMahasiswa" class="hasil"></p>
+      </section>
+
+      <section id="tugas2" class="halaman">
+        <h2>Tugas 2 - Pencarian Kode Pos Indonesia</h2>
+        <p>Pilih wilayah secara berurutan.</p>
+        <form id="formKodePos">
+          <label for="provinsi">Provinsi:</label>
+          <select id="provinsi" required>
+            <option value="">-- Pilih Provinsi --</option>
+          </select>
+
+          <label for="kabupaten">Kabupaten/Kota:</label>
+          <select id="kabupaten" disabled required>
+            <option value="">-- Pilih Kabupaten/Kota --</option>
+          </select>
+
+          <label for="kecamatan">Kecamatan:</label>
+          <select id="kecamatan" disabled required>
+            <option value="">-- Pilih Kecamatan --</option>
+          </select>
+
+          <button type="submit">Cari Kode Pos</button>
+        </form>
+        <div id="hasilKodePos" class="hasil tidak-tampil"></div>
+      </section>
+
+      <section id="tugas3" class="halaman">
+        <h2>Tugas 3 - Form Registrasi dan Validasi</h2>
+        <p>Semua data wajib diisi dengan benar.</p>
+        <form id="formValidasi" novalidate>
+          <label for="name">Name:</label>
+          <input id="name" type="text" />
+          <small id="errorName" class="error"></small>
+
+          <label for="address">Address:</label>
+          <textarea id="address" rows="3"></textarea>
+          <small id="errorAddress" class="error"></small>
+
+          <label for="email">Email Address:</label>
+          <input id="email" type="email" />
+          <small id="errorEmail" class="error"></small>
+
+          <label for="password">Password:</label>
+          <input id="password" type="password" />
+          <small id="errorPassword" class="error"></small>
+
+          <label for="course">Select Your Course:</label>
+          <select id="course">
+            <option value="">-- Select Course --</option>
+            <option>Web Development</option>
+            <option>Data Science</option>
+            <option>UI/UX Design</option>
+            <option>Mobile Development</option>
+          </select>
+          <small id="errorCourse" class="error"></small>
+
+          <label for="college">College Name:</label>
+          <input id="college" type="text" />
+          <small id="errorCollege" class="error"></small>
+
+          <button type="submit">Register</button>
+        </form>
+        <p id="hasilValidasi" class="hasil"></p>
+      </section>
+
+      <section id="tugas4" class="halaman">
+        <h2>Tugas 4 - Dropdown Dinamis</h2>
+        <p>Program studi akan berubah sesuai fakultas yang dipilih.</p>
+        <form id="formDropdown">
+          <label for="fakultas">Fakultas:</label>
+          <select id="fakultas" required>
+            <option value="">-- Pilih Fakultas --</option>
+            <option>Teknologi Informasi</option>
+            <option>Teknik</option>
+            <option>Ekonomi dan Bisnis</option>
+            <option>Sains dan Analitika Data</option>
+          </select>
+
+          <label for="programStudi">Program Studi:</label>
+          <select id="programStudi" disabled required>
+            <option value="">-- Pilih Fakultas Terlebih Dahulu --</option>
+          </select>
+
+          <label for="tahun">Tahun Masuk:</label>
+          <select id="tahun" required>
+            <option value="">-- Pilih Tahun --</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+          </select>
+
+          <button type="submit">Tampilkan</button>
+        </form>
+        <div id="hasilDropdown" class="hasil tidak-tampil"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Tugas Pemrograman Web - JavaScript</p>
+    </footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
