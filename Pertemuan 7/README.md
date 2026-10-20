@@ -3,9 +3,10 @@
 **Nama:** Asher Yedijah Hoesono  
 **NRP:** 5025251106  
 **Mata Kuliah:** Pemrograman Web  
-**Pertemuan:** 7
+**Pertemuan:** 7  
 **Source Code:** https://github.com/AsherYedi/PemrogramanWeb_Asher-Yedijah-Hoesono_5025251106/blob/main/Pertemuan%207/  
-**Link:**
+**Link 1:** https://asheryedi.github.io/PemrogramanWeb_Asher-Yedijah-Hoesono_5025251106/Pertemuan%207/tugas-1/  
+**Link 2:** https://asheryedi.github.io/PemrogramanWeb_Asher-Yedijah-Hoesono_5025251106/Pertemuan%207/tugas-2/
 
 ## Deskripsi
 
@@ -33,6 +34,8 @@ Halaman portal berita menampilkan informasi kampus dalam susunan yang mudah diba
 - Footer dengan tautan informasi.
 - Layout grid yang berubah mengikuti lebar layar: menu kategori berada di atas konten pada layar kecil dan di sisi konten pada layar lebih lebar.
 
+![tugas1](/Pertemuan%207/tugas-1/tugas1.png)
+
 ## 2. Halaman Sign In dan Sign Up
 
 File: [`tugas-2/index.html`](./tugas-2/index.html)
@@ -51,6 +54,8 @@ Halaman autentikasi menyediakan form masuk dan pendaftaran akun dalam satu tampi
 - Email sign in dapat disimpan di `localStorage` ketika pilihan “Remember password” dicentang.
 
 > Form ini merupakan simulasi antarmuka sisi browser. Belum ada autentikasi, pembuatan akun, atau penyimpanan data pengguna ke server.
+
+![tugas2](/Pertemuan%207/tugas-2/tugas2.png)
 
 ## Struktur File
 
