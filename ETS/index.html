@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LibraryReg - Pendaftaran Anggota Perpustakaan</title>
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="vendor/sweetalert2.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navUtama" data-bs-offset="80" tabindex="0">
+<nav class="navbar navbar-expand-lg sticky-top" id="navUtama">
+<div class="container">
+<a class="navbar-brand brand" href="index.html">LibraryReg</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" href="#beranda" aria-current="page">Beranda</a></li>
+<li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+<li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+<li class="nav-item"><a class="nav-link" href="daftar-anggota.html">Daftar Anggota</a></li>
+<li class="nav-item"><a class="nav-link" href="pendaftaran.html">Pendaftaran</a></li>
+<li class="nav-item"><a class="nav-link" href="login.html" id="navLogin">Login Petugas</a></li>
+</ul></div></div></nav>
+
+<header class="hero" id="beranda"><div class="container"><div class="row align-items-center g-5">
+<div class="col-lg-7">
+<h1>Daftar anggota perpustakaan tanpa antre kertas.</h1>
+<p class="mt-4 mb-4">Isi formulir sekali, dapatkan nomor anggota saat itu juga. Petugas tidak perlu menyalin data dari kertas ke buku besar, jadi kartu anggota Anda siap lebih cepat.</p>
+<a class="btn btn-brass btn-lg" href="pendaftaran.html">Daftar jadi anggota</a>
+<a class="btn btn-link text-white btn-lg" href="#layanan">Lihat layanan</a>
+</div>
+<div class="col-lg-5"><div class="card-wrap"><div id="kartuHero"></div></div></div>
+</div></div></header>
+
+<section class="bagian" id="tentang"><div class="container"><div class="row g-5">
+<div class="col-lg-5"><h2>Perpustakaan kampus yang buka untuk semua sivitas</h2></div>
+<div class="col-lg-6 offset-lg-1" style="max-width:62ch">
+<p>Pendaftaran anggota selama ini memakai formulir kertas. Saat musim mahasiswa baru, antrean mengular, data harus diketik ulang, dan salah ketik sering baru ketahuan ketika kartu sudah dicetak.</p>
+<p>LibraryReg memindahkan proses itu ke layar. Calon anggota mengisi data sendiri, sistem memeriksa kelengkapan dan memastikan NIM/NIP belum pernah terdaftar, lalu petugas mengelola seluruh data anggota dari satu tabel.</p>
+<p class="mb-0">Mahasiswa, dosen, dan tenaga kependidikan semuanya dapat mendaftar.</p>
+</div></div></div></section>
+
+<section class="bagian alt" id="layanan"><div class="container">
+<h2>Layanan yang bisa Anda pakai setelah terdaftar</h2>
+<ul class="layanan">
+<li><strong>Ruang baca 24 jam</strong><span>Lantai 3 terbuka sepanjang hari. Setelah pukul 21.00, tunjukkan kartu anggota di pintu masuk.</span></li>
+<li><strong>Jurnal internasional</strong><span>Akses jurnal dan e-book berlangganan dari jaringan kampus maupun dari rumah.</span></li>
+<li><strong>Peminjaman buku</strong><span>Mahasiswa meminjam 5 buku selama 14 hari. Dosen dan tenaga kependidikan 10 buku selama 30 hari.</span></li>
+<li><strong>Ruang diskusi</strong><span>Enam ruang untuk 4-8 orang, dipesan lewat meja layanan lantai 1.</span></li>
+<li><strong>Layanan fotokopi dan pindai</strong><span>Tersedia di lantai 1 untuk kebutuhan tugas dan penelitian.</span></li>
+</ul></div></section>
+
+<section class="bagian"><div class="container">
+<h2>Perpustakaan dalam angka</h2>
+<dl class="buku-besar">
+<div><dt>Buku cetak</dt><dd>142.800</dd></div>
+<div><dt>Judul jurnal dan e-book</dt><dd>21.400</dd></div>
+<div><dt>Anggota aktif</dt><dd>8.650</dd></div>
+<div><dt>Jam buka ruang baca per hari</dt><dd>24</dd></div>
+</dl>
+<p class="small text-secondary mt-3 mb-0">Angka ilustratif untuk prototipe.</p>
+</div></section>
+
+<footer><div class="container"><div class="row g-4">
+<div class="col-md-4"><h3>Kontak</h3><p class="mb-1">Gedung Perpustakaan Pusat, Lantai 1</p><p class="mb-1">(031) 555-0142</p><a href="mailto:perpustakaan@kampus.ac.id">perpustakaan@kampus.ac.id</a></div>
+<div class="col-md-4"><h3>Jam layanan</h3><p class="mb-1">Senin-Jumat: 07.30-21.00</p><p class="mb-1">Sabtu: 08.00-16.00</p><p class="mb-0">Ruang baca lantai 3: 24 jam</p></div>
+<div class="col-md-4"><h3>Media sosial</h3><p class="mb-1"><a href="#">Instagram @perpus.kampus</a></p><p class="mb-1"><a href="#">YouTube Perpustakaan Kampus</a></p><p class="mb-0"><a href="#">X @perpuskampus</a></p></div>
+</div></div></footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="vendor/sweetalert2.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

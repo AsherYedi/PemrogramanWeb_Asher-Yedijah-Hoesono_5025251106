@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login Petugas - LibraryReg</title>
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="vendor/sweetalert2.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top" id="navUtama">
+<div class="container">
+<a class="navbar-brand brand" href="index.html">LibraryReg</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#layanan">Layanan</a></li>
+<li class="nav-item"><a class="nav-link" href="daftar-anggota.html">Daftar Anggota</a></li>
+<li class="nav-item"><a class="nav-link" href="pendaftaran.html">Pendaftaran</a></li>
+<li class="nav-item"><a class="nav-link active" href="login.html" aria-current="page" id="navLogin">Login Petugas</a></li>
+</ul></div></div></nav>
+
+<main class="halaman"><div class="container" style="max-width:460px">
+<h1 class="h2 mb-4">Login petugas</h1>
+<div class="panel"><form id="formLogin">
+<div class="alert alert-danger d-none" id="loginError" role="alert"></div>
+<div class="mb-3"><label class="form-label" for="user">Nama pengguna</label><input class="form-control" id="user" name="user" required autocomplete="username"></div>
+<div class="mb-4"><label class="form-label" for="pass">Kata sandi</label><input class="form-control" type="password" id="pass" name="pass" required autocomplete="current-password"></div>
+<button class="btn btn-green w-100" type="submit">Masuk</button></form></div>
+<p class="small text-secondary mt-3">Akun prototipe: pengguna <b>petugas</b>, kata sandi <b>perpus123</b>. Login ini hanya simulasi di sisi klien.</p>
+</div></main>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="vendor/sweetalert2.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

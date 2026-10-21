@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pendaftaran Anggota - LibraryReg</title>
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="vendor/sweetalert2.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top" id="navUtama">
+<div class="container">
+<a class="navbar-brand brand" href="index.html">LibraryReg</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#layanan">Layanan</a></li>
+<li class="nav-item"><a class="nav-link" href="daftar-anggota.html">Daftar Anggota</a></li>
+<li class="nav-item"><a class="nav-link active" href="pendaftaran.html" aria-current="page">Pendaftaran</a></li>
+<li class="nav-item"><a class="nav-link" href="login.html" id="navLogin">Login Petugas</a></li>
+</ul></div></div></nav>
+
+<main class="halaman"><div class="container"><div class="row g-5">
+<div class="col-lg-7"><h1 class="h2 mb-1">Pendaftaran anggota</h1>
+<p class="text-secondary mb-4">Semua kolom wajib diisi. NIM/NIP tidak boleh sama dengan anggota yang sudah terdaftar.</p>
+<div class="panel"><form id="formDaftar"></form>
+<button type="button" class="btn btn-green btn-lg" id="btnDaftar">Daftar sebagai anggota</button></div></div>
+<div class="col-lg-5"><div class="position-sticky" style="top:5rem"><h2 class="h5 mb-3">Kartu Anda</h2><div id="pratinjau"></div>
+<p class="small text-secondary mt-3">Kartu berubah sesuai isian. Nomor anggota diberikan setelah pendaftaran berhasil.</p></div></div>
+</div></div></main>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="vendor/sweetalert2.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pendaftaran.js"></script>
+</body>
+</html>
